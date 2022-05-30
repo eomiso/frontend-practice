@@ -1,3 +1,4 @@
+/* Typography */
 html {
   font-size: 62.5%;
 }
@@ -5,7 +6,7 @@ html {
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
-  --color-accept: #ff3400;
+  --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
@@ -55,5 +56,31 @@ p {
 
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+  transition: margin 0.15;
+}
+
+@media screen and (mid-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
