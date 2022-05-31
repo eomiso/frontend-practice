@@ -120,6 +120,10 @@ a {
   padding: 0.5rem 1.5rem;
 }
 
+.card--primary .badge--primary {
+  background-color: rgb(37, 100, 218);
+}
+
 @media screen and (min-width: 1024px) {
   .badge {
     font-size: 1.2rem;
@@ -343,6 +347,24 @@ a {
 .plan .list__item {
   margin-bottom: 2rem;
 }
+
+.plan {
+  transition: transform .2s ease-out;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+
+
 .plan--popular .card__header {
   position: relative;
 }
@@ -724,4 +746,18 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     font-size: 1.2rem;
   }
+}
+
+/* Plans Block */
+.block-plans .grid {
+  gap: 8rem 4rem; /* row column */ 
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.container.block-plans {
+  margin-top: 4rem;
 }
