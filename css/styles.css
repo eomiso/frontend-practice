@@ -32,6 +32,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -567,7 +568,6 @@ a {
 .block {
   --padding-vertical: 6rem  /* 모든 자식에게서 보이는 변수 */
   padding: var(var(--padding-vertical)) 2rem;
-  border: 2px solid red;
 }
 
 .block__header {
@@ -589,12 +589,12 @@ a {
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 1%, 100% 0%, 100% 100%, 0% 86%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 86%);
 }
 
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 1%, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 
 .container {
@@ -657,5 +657,34 @@ a {
   }
   .nav__item {
     border-bottom: none;
+  }
+}
+
+/* Hero */
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
