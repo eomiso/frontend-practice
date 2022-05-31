@@ -761,3 +761,50 @@ a {
 .container.block-plans {
   margin-top: 4rem;
 }
+
+/* feature */ 
+
+.feature .media {
+  flex-direction: column;
+}
+
+.feature .icon-container {
+  margin: 1.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.feature .icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.feature {
+  gap: 5rem;
+  align-items: center;
+  margin: 12rem 0
+}
+
+.feature .link-arrow {
+  font-weight: 600;
+  transition: trans;
+}
+
+.feature .link-arrow:hover::after {
+  transition: margin .3s ease-in-out;
+}
+
+.feature__image {
+  padding-top: 6rem;
+  width: 100%;
+}
+
+.featrue:first-of-type {
+  margin-top: 12rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order:2;
+  }
+}
