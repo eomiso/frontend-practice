@@ -5,6 +5,11 @@
 }
 
 /* Typography */
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -135,7 +140,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-headings);
 }
 
 /* a new skin inline */
@@ -145,6 +149,7 @@ a {
 }
 
 .list--tick {
+  color: var(--color-headings);
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
 }
@@ -403,6 +408,7 @@ a {
 
 .media__title {
   margin-top: 0;
+  color: #fff;
 }
 
 .media__body {
@@ -806,5 +812,34 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order:2;
+  }
+}
+
+
+/* block SHowcase */
+
+.block-showcase .media {
+  margin-bottom: 4rem;
+}
+
+.block-showcase .media__body p {
+  font-size: 2.3rem;
+  line-height: 1.6;
+
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image {
+    width: auto;
+    justify-self: end;
+    max-width: 700px;
+  }
+  .lock-showcase__image > img {
+    width: auto;
+    max-width: 700px;
   }
 }
