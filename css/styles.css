@@ -356,7 +356,7 @@ a {
 }
 
 .plan {
-  transition: transform .2s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 .plan:hover {
@@ -370,7 +370,6 @@ a {
 .plan--popular:hover {
   transform: scale(1.15);
 }
-
 
 .plan--popular .card__header {
   position: relative;
@@ -604,7 +603,7 @@ a {
 
 /* Block */
 .block {
-  --padding-vertical: 6rem  /* 모든 자식에게서 보이는 변수 */
+  --padding-vertical: 6rem; /* 모든 자식에게서 보이는 변수 */
   padding: var(var(--padding-vertical)) 2rem;
 }
 
@@ -646,7 +645,7 @@ a {
 
 .nav {
   background: #000;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
@@ -659,7 +658,7 @@ a {
 
 .nav__list {
   width: 100%;
-  margin: 0
+  margin: 0;
 }
 .nav__item {
   padding: 0.5rem 2rem;
@@ -680,7 +679,7 @@ a {
   box-shadow: 0 0 0 3px #666;
   border-radius: 5px;
   transition: box-shadow 0.15s;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .nav__brand {
@@ -714,7 +713,6 @@ a {
   letter-spacing: 1px;
   margin: 2rem 0 5rem;
 }
-
 
 .hero__image {
   width: 100%;
@@ -762,7 +760,7 @@ a {
 
 /* Plans Block */
 .block-plans .grid {
-  gap: 8rem 4rem; /* row column */ 
+  gap: 8rem 4rem; /* row column */
 }
 
 .block-plans .card {
@@ -774,7 +772,7 @@ a {
   margin-top: 4rem;
 }
 
-/* feature */ 
+/* feature */
 
 .feature .media {
   flex-direction: column;
@@ -794,7 +792,7 @@ a {
 .feature {
   gap: 5rem;
   align-items: center;
-  margin: 12rem 0
+  margin: 12rem 0;
 }
 
 .feature__title {
@@ -807,7 +805,7 @@ a {
 }
 
 .feature .link-arrow:hover::after {
-  transition: margin .3s ease-in-out;
+  transition: margin 0.3s ease-in-out;
 }
 
 .feature__image {
@@ -821,10 +819,9 @@ a {
 
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
-    order:2;
+    order: 2;
   }
 }
-
 
 /* block SHowcase */
 
@@ -835,7 +832,6 @@ a {
 .block-showcase .media__body p {
   font-size: 2.3rem;
   line-height: 1.6;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -878,7 +874,6 @@ a {
   font-size: 2.1rem;
   color: #fff;
   opacity: 0.3;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -924,5 +919,4 @@ a {
   .footer a:hover {
     color: #fff;
   }
-
 }
